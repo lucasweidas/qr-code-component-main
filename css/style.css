@@ -76,6 +76,7 @@ a:focus-visible {
 
 .card-txt-c > p {
     color: var(--clr-grayish-blue);
+    padding-inline: 0.5rem;
 }
 
 /*****************************************/
