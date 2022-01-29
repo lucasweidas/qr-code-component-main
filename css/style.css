@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****************************************/
+/* Variables */
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    --font-default: 'Outfit', sans-serif;
+}
+
+/*****************************************/
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr auto;
+    font-family: var(--font-default);
+    text-align: center;
+    background-color: var(--clr-light-gray);
+    padding: 1rem;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-grayish-blue);
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+    color: var(--clr-dark-blue);
+}
+
+/*****************************************/
+/* Card Container */
+.card-c {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 500px;
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 1px rgba(123, 135, 157, 0.2);
+    padding: 1.25rem;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card Text Container */
+.card-txt-c {
+    padding-block: 1.75rem 1.125rem;
+}
+
+.card-txt-c > h1 {
+    font-size: 1.5rem;
+    color: var(--clr-dark-blue);
+    margin-bottom: 1rem;
+}
+
+.card-txt-c > p {
+    color: var(--clr-grayish-blue);
+}
+
+/*****************************************/
+/* Footer */
+.attribution {
+    color: var(--clr-dark-blue);
+    padding-top: 1.5em;
+}
